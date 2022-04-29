@@ -1,8 +1,42 @@
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-}
+* {
+  font-family: 'Libre Bodoni', serif;
+  font-family: 'Source Sans Pro', sans-serif; }
 
-a {
-    text-decoration: none;
-    color: red;
-}
+h1 a {
+  text-decoration: none;
+  color: red; }
+
+ul li a:hover {
+  color: green;
+  font-size: larger;
+  font-weight: bold; }
+
+.fuente-rosa {
+  background-color: pink; }
+
+.fuente-amarillo {
+  background-color: yellow; }
+
+.fuente-valor1 {
+  font-size: 80%; }
+
+.fuente-valor2 {
+  font-size: 100%; }
+
+.titulo, .titulo-nuevo1, .titulo-nuevo2 {
+  border: 2px dashed brown;
+  background-color: #DDE392;
+  margin: 10px;
+  font-size: 13px; }
+
+.titulo-nuevo1 {
+  font-size: 20px; }
+
+.titulo-nuevo2 {
+  font-size: 25px; }
+
+.espacio {
+  width: 300px;
+  height: 500px;
+  background-color: #610F7F;
+  font-weight: bold; }

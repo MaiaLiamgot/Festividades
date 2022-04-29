@@ -1,0 +1,62 @@
+* {
+    font-family: 'Libre Bodoni', serif;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 a {
+    text-decoration: none;
+    color: red;
+}
+
+ul li a:hover { 
+    color: green;
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+$colores_pagina: (rosa:pink, amarillo: yellow); 
+$tamano: (valor1:80%, valor2:100%);
+
+@each $clave, $valor in $colores_pagina {   
+    .fuente-#{$clave} {
+        background-color: $valor;
+   }
+}
+
+@each $clave2, $valor2 in $tamano {
+    .fuente-#{$clave2} {
+        font-size: $valor2;
+    }
+}
+
+.titulo {
+    border: 2px dashed brown;
+    background-color:#DDE392;
+    margin: 10px;
+    font-size: 13px;
+}
+
+ 
+.titulo-nuevo1 {
+    @extend .titulo;
+    font-size: 20px;
+}
+
+.titulo-nuevo2 {
+    @extend .titulo;
+    font-size: 25px;
+
+}
+
+@mixin forma ($ancho, $alto, $color_fuente, $negrita) {
+    width: $ancho;
+    height: $alto;
+    background-color: $color_fuente;
+    font-weight: $negrita;
+}
+
+.espacio {
+    @include forma (300px, 500px, #610F7F, bold);
+}
+
